@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rollcall"
+version = "0.0.1"
+authors = [{ name = "Mitcham Andes Ochia", email = "ochiamitcham@gmail.com"},
+]
+description = "Rollcall - An attendance monitoring system"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+# [project.dependencies]
+
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "pkg/*.py",
+  "/tests",
+]
