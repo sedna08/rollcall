@@ -16,8 +16,10 @@ classifiers = [
 ]
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
+dependencies = [
+    "django"
+]
 
-# [project.dependencies]
 
 
 [tool.hatch.build.targets.sdist]
